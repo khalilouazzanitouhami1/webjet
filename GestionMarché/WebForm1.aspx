@@ -5,21 +5,12 @@
     <div class="page-wrapper">
         <div class="container-fluid">
 
-             <div class="col-md-5 align-self-center">
-                <h3 class="text-themecolor">Dashboard 1</h3>
-                <ol class="breadcrumb">
-                     <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                     <li class="breadcrumb-item active">Dashboard 1</li>
-                </ol>
-            </div>
-            
             
             <div class="row">
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Default Basic Forms</h4>
-                                <h6 class="card-subtitle"> All bootstrap element classies </h6>
+                                
                                 <form class="form">
                                     <div class="form-group m-t-40 row">
                                         <label for="example-text-input" class="col-2 col-form-label">Text</label>
