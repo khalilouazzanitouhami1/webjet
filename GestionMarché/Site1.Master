@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
+ <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
@@ -32,9 +32,10 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -103,7 +104,7 @@
                         <!-- Comment -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="icon-Bell"></i>
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="icon-Bell"></i>
                                 <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
@@ -154,7 +155,7 @@
                         <li class="nav-item dropdown">
                            
                                 <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
-                            </a>
+                            
                             <div class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown" aria-labelledby="2">
                                 <ul>
                                     <li>
@@ -194,12 +195,6 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- mega menu -->
-                        <!-- ============================================================== -->
                         
                         <!-- ============================================================== -->
                         <!-- End mega menu -->
@@ -251,9 +246,9 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="nav-small-cap">--- Gestion Marché</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-social-dropbox"></i><span class="hide-menu">Marché </span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class=" fa fa-shopping-bag"></i><span class="hide-menu">Marché </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Ajouter Marché </a></li>
+                                <li><a href="WebForm2.aspx">Ajouter Marché </a></li>
                                 <li><a href="index2.html">Gérer Marché</a></li>
                                
                             </ul>
@@ -263,35 +258,35 @@
                                
                                 <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">ATM</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="index.html">Ajouter ATM </a></li>
+                                        <li><a href="WebForm3.aspx">Ajouter ATM </a></li>
                                         <li><a href="index2.html">Gérer ATM</a></li>
                                     </ul>
 
                                    
                                 <li>  <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">PVR-PROVISOIRE</span></a>
                                   <ul aria-expanded="false" class="collapse">
-                                        <li><a href="index.html">Ajouter PVRP </a></li>
+                                        <li><a href="WebForm4.aspx">Ajouter PVRP </a></li>
                                         <li><a href="index2.html">Gérer PVRP</a></li>
                                   </ul>
                                  </li>
                                 
                                 <li><a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">PVR-DEFENITIVE</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="index.html">Ajouter PVRD </a></li>
+                                        <li><a href="WebForm5.aspx">Ajouter PVRD </a></li>
                                         <li><a href="index2.html">Gérer PVRD</a></li>
                                   </ul>
                                     
                                 </li>
                                 <li><a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">DECOMPTE PROVISOIRE</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="index.html">Ajouter DECOMPTE  </a></li>
+                                        <li><a href="WebForm13.aspx">Ajouter DECOMPTE  </a></li>
                                         <li><a href="index2.html">Gérer DECOMPTE  </a></li>
                                   </ul>
                                 </li>
                                 
                                 <li><a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">DECOMPTE DEFENITIV</span></a>
                                     <ul aria-expanded="false" class="collapse">
-                                        <li><a href="index.html">Ajouter DECOMPTE  </a></li>
+                                        <li><a href="WebForm12.aspx">Ajouter DECOMPTE  </a></li>
                                         <li><a href="index2.html">Gérer DECOMPTE  </a></li>
                                   </ul>
                                 </li>
@@ -299,23 +294,47 @@
                             </ul>
                             </li>
                            
-                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-location-pin"></i><span class="hide-menu">Deplacement</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="ti-map-alt"></i><span class="hide-menu">Deplacement</span></a>
                             <ul aria-expanded="false" class="collapse">
-                               <li><a href="index.html">Ajouter deplacement </a></li>
+                               <li><a href="WebForm7.aspx">Ajouter deplacement </a></li>
                                <li><a href="index2.html">Gérer deplacement  </a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-layers"></i><span class="hide-menu">Fourniture</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Ajouter fourniture  </a></li>
+                                <li><a href="WebForm6.aspx">Ajouter fourniture  </a></li>
                                 <li><a href="index2.html">Gérer fourniture  </a></li>
                             </ul>
                         </li>
                         
                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-check"></i><span class="hide-menu">Garentie</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="index.html">Ajouter garentie  </a></li>
+                                <li><a href="WebForm8.aspx">Ajouter garentie  </a></li>
                                 <li><a href="index2.html">Gérer garentie  </a></li>
+                            </ul>
+                        </li>
+
+                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="fa fa-id-card-o"></i><span class="hide-menu">Fournisseur</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="WebForm10.aspx">Ajouter Fournisseur  </a></li>
+                                <li><a href="index2.html">Gérer Fournisseur  </a></li>
+                                 
+                            </ul>
+                        </li>
+
+                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="fa fa-id-card"></i><span class="hide-menu">Fournisseur Etranger</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                
+                                 <li><a href="WebForm11.aspx">Ajouter Fournisseur Etranger </a></li>
+                                <li><a href="index2.html">Gérer Fournisseur Etranger</a></li>
+                            </ul>
+                        </li> 
+
+                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-doc"></i><span class="hide-menu">Ordre Service</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                
+                                 <li><a href="WebForm9.aspx">Ajouter Ordre</a></li>
+                                <li><a href="index2.html">Gérer Oredre</a></li>
                             </ul>
                         </li>
 
@@ -376,9 +395,6 @@
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="assets/node_modules/styleswitcher/jQuery.style.switcher.js"></script>
-
-
-
 
 
 
