@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm7.aspx.cs" Inherits="GestionMarché.WebForm7" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm7.aspx.cs" Inherits="GestionMarché.WebForm7" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
@@ -34,16 +34,16 @@
                                         <div class="row p-t-20">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Réference</label>
-                                                    <asp:TextBox ID="TextBox1" class="form-control" placeholder="Réference" runat="server"></asp:TextBox>
+                                                    <label class="control-label">Numéro Deplacement</label>
+                                                    <asp:TextBox ID="TextBox1" class="form-control" placeholder="Numéro Deplacement" runat="server"></asp:TextBox>
                                                     
                                                  </div>
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group ">
-                                                    <label class="control-label">Reference Marché</label>
-                                                    <asp:DropDownlist ID="DropDownlist1" class="form-control " placeholder="Reference Marché" runat="server"></asp:DropDownlist>
+                                                    <label class="control-label">Numéro Marché</label>
+                                                    <asp:DropDownlist ID="DropDownlist1" class="form-control " placeholder="Numéro Marché" runat="server"></asp:DropDownlist>
                                                 </div>
                                             </div>
                                             <!--/span-->
@@ -52,16 +52,16 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group ">
-                                                    <label class="control-label">Motif</label>
-                                                    <asp:TextBox ID="TextBox2" class="form-control " placeholder="Motif" runat="server"></asp:TextBox>
+                                                    <label class="control-label">Date Deplacement</label>
+                                                    <asp:TextBox ID="TextBox2" class="form-control " placeholder="Date Deplacement" runat="server" TextMode="Date"></asp:TextBox>
                                                 </div>
                                                 
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Divers </label>
-                                                    <asp:TextBox ID="TextBox3" class="form-control " placeholder="Divers" runat="server" ></asp:TextBox>
+                                                    <label class="control-label">Motif </label>
+                                                    <asp:TextBox ID="TextBox3" class="form-control " placeholder="Motif" runat="server" ></asp:TextBox>
                                                 </div>
                                             </div>
                                             <!--/span-->
@@ -70,25 +70,33 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Prix auto toute</label>
-                                                    <asp:TextBox ID="TextBox4" class="form-control "  placeholder="Prix auto route" runat="server" ></asp:TextBox>
+                                                    <label class="control-label">Divers</label>
+                                                    <asp:TextBox ID="TextBox4" class="form-control "  placeholder="Divers" runat="server" ></asp:TextBox>
                                                 </div>
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Prix carburant</label>
-                                                    <asp:TextBox ID="TextBox5" class="form-control " placeholder="Designation" runat="server" ></asp:TextBox>
+                                                    <label class="control-label">km</label>
+                                                    <asp:TextBox ID="TextBox5" class="form-control " placeholder="km" runat="server" ></asp:TextBox>
                                                 </div>
                                             </div>
                                             <!--/span-->
 
                                       </div>
                                       
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Prix Carburant</label>
+                                                    <asp:TextBox ID="TextBox6" class="form-control "  placeholder="Divers" runat="server" ></asp:TextBox>
+                                                </div>
+                                            </div>
                                     </div>
+                                        </div>
                                     <div class="form-actions">  
-                                        <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-success"  />
-                                        <asp:Button ID="Button2" runat="server" Text="Cancel" class="btn btn-inverse"  />
+                                        <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-success" OnClick="Button1_Click1"   />
+                                        <asp:Button ID="Button2" runat="server" Text="Cancel" class="btn btn-inverse"   />
                                     </div>
                                 </form>
                             </div>
