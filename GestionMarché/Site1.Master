@@ -327,40 +327,19 @@
                                 <li><a href="index2.html">Gérer Fournisseur Etranger</a></li>
                             </ul>
                         </li> 
-
-                    <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-layers"></i><span class="hide-menu">Fourniture</span></a>
-                      <ul aria-expanded="false" class="collapse">
-                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">Fourniture Local</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-layers"></i><span class="hide-menu">Fourniture</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="WebForm6.aspx">Ajouter fourniture  </a></li>
                                 <li><a href="index2.html">Gérer fourniture  </a></li>
                             </ul>
                         </li>
-                          <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">Fourniture Etranger</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="WebForm1.aspx">Ajouter fourniture   </a></li>
-                                <li><a href="index2.html">Gérer fourniture  </a></li>
-                            </ul>
-                        </li>
-                       </ul>
-                     </li>
-
-                       <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="ti-map-alt"></i><span class="hide-menu">Deplacement</span></a>
-                      <ul aria-expanded="false" class="collapse">
-                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">Deplacement</span></a>
+                        
+                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="ti-map-alt"></i><span class="hide-menu">Deplacement</span></a>
                             <ul aria-expanded="false" class="collapse">
                                <li><a href="WebForm7.aspx">Ajouter deplacement </a></li>
                                <li><a href="index2.html">Gérer deplacement  </a></li>
                             </ul>
                         </li>
-                          <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><span class="">Document Deplacement</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                               <li><a href="WebForm16.aspx">Ajouter Document </a></li>
-                               <li><a href="index2.html">Gérer Document  </a></li>
-                            </ul>
-                        </li>
-                          </ul>
-                           </li>
                         
                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-check"></i><span class="hide-menu">Garantie et Ordre</span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -385,17 +364,11 @@
                                  
                         <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="sl-icon-user"></i><span class="hide-menu">Employé</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="WebForm17.aspx">Ajouter enployé  </a></li>
+                                <li><a href="index.html">Ajouter enployé  </a></li>
                                 <li><a href="index2.html">Gérer employé  </a></li>
                             </ul>
                         </li>
-                        <li class="nav-small-cap">---Société</li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="index.html#" aria-expanded="false"><i class="mdi mdi-bank"></i><span class="hide-menu">Société</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="WebForm18.aspx">Ma Société</a></li>
-                                
-                            </ul>
-                        </li>
+                           
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
