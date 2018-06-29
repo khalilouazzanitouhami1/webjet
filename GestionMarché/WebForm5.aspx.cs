@@ -32,9 +32,10 @@ namespace GestionMarché
                 SqlCommand cmd = new SqlCommand(db.s, db.cnx);
                 cmd.ExecuteNonQuery();
             }
-            catch
+            catch(Exception ex)
             {
-                Response.Write("<body><script>alert(\"données incorecte \");</script></body>");
+                Label1.Visible = true;
+                Label1.Text = "erreur : " + ex.Message;
             }
         }
     }

@@ -36,8 +36,9 @@ namespace GestionMarché
             }
             catch(Exception ex)
             {
-                Response.Write("<body><script>alert(\"données incorecte \");</script></body>");
-                Button1.Text = "Erreur :" + ex.Message;
+                Label1.Visible = true;
+                Label1.Text = "erreur : " + ex.Message;
+                
             }
         }
 

@@ -96,7 +96,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Data.js" />
     <Content Include="mini-sidebar\css\animate.css" />
     <Content Include="mini-sidebar\css\colors\default.css" />
     <Content Include="mini-sidebar\css\pages\bootstrap-switch.css" />
@@ -452,6 +451,9 @@
     <Content Include="WebForm13.aspx" />
     <Content Include="WebForm14.aspx" />
     <Content Include="WebForm15.aspx" />
+    <Content Include="WebForm16.aspx" />
+    <Content Include="WebForm17.aspx" />
+    <Content Include="WebForm18.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
@@ -460,10 +462,6 @@
     <Content Include="WebForm7.aspx" />
     <Content Include="WebForm8.aspx" />
     <Content Include="WebForm9.aspx" />
-    <Content Include="Handler\MarcheDataHandler1.ashx" />
-    <Content Include="Handler\DeleteMarcheHandler1.ashx" />
-    <Content Include="Handler\UpdateMarcheHandler1.ashx" />
-    <Content Include="Handler\SaveMarcheHandler1.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -568,19 +566,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Handler\DeleteMarcheHandler1.ashx.cs">
-      <DependentUpon>DeleteMarcheHandler1.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Handler\MarcheDataHandler1.ashx.cs">
-      <DependentUpon>MarcheDataHandler1.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Handler\SaveMarcheHandler1.ashx.cs">
-      <DependentUpon>SaveMarcheHandler1.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Handler\UpdateMarcheHandler1.ashx.cs">
-      <DependentUpon>UpdateMarcheHandler1.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Marche.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -637,6 +622,27 @@
     </Compile>
     <Compile Include="WebForm15.aspx.designer.cs">
       <DependentUpon>WebForm15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm16.aspx.cs">
+      <DependentUpon>WebForm16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm16.aspx.designer.cs">
+      <DependentUpon>WebForm16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm17.aspx.cs">
+      <DependentUpon>WebForm17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm17.aspx.designer.cs">
+      <DependentUpon>WebForm17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm18.aspx.cs">
+      <DependentUpon>WebForm18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm18.aspx.designer.cs">
+      <DependentUpon>WebForm18.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
@@ -697,7 +703,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Class\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

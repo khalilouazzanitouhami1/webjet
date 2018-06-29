@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm9.aspx.cs" Inherits="GestionMarché.WebForm9" EnableEventValidation="false"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm16.aspx.cs" Inherits="GestionMarché.WebForm16" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
@@ -8,18 +8,15 @@
 
              <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Ordre Service</h3>
+                        <h3 class="text-themecolor">Deplacement Document</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Ajout Ordre</li>
+                            <li class="breadcrumb-item active">Ajout Doncument</li>
                         </ol>
-                         
-              </div>
+                  </div>
              </div>
 
-             
-                   <!-- Row -->
-            <div class="row">
+              <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header bg-info">
@@ -33,16 +30,16 @@
                                         <div class="row p-t-20">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Numéro Ordre</label>
-                                                    <asp:TextBox ID="TextBox1" class="form-control" placeholder="Numéro Ordre" runat="server"></asp:TextBox>
+                                                    <label class="control-label">Numéro Deplacement Document</label>
+                                                    <asp:TextBox ID="TextBox1" class="form-control" placeholder="Numéro Deplacement Document" runat="server"></asp:TextBox>
                                                    
                                                  </div>
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group ">
-                                                    <label class="control-label">Numéro Retenue Garantie</label>
-                                                    <asp:DropDownlist ID="DropDownlist1" class="form-control " placeholder="Numéro Retenue Garantie" runat="server"></asp:DropDownlist>
+                                                    <label class="control-label">Numéro Deplacement</label>
+                                                    <asp:DropDownlist ID="DropDownlist1" class="form-control " placeholder="Numéro Deplacement" runat="server"></asp:DropDownlist>
                                                 </div>
                                             </div>
                                             <!--/span-->
@@ -50,33 +47,21 @@
                                          <!--/row-->
                                         <div class="row">
                                             <div class="col-md-6">
-                                                  <div class="form-group ">
-                                                    <label class="control-label">Sous Entete</label>
-                                                    <asp:TextBox ID="TextBox2" class="form-control " placeholder="Sous Entete" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                                <div class="form-group ">
+                                                    <label class="control-label">Numéro Marché</label>
+                                                    <asp:DropDownlist ID="DropDownlist2" class="form-control " placeholder="Numéro Marché" runat="server"></asp:DropDownlist>
                                                 </div>
                                                 
                                             </div>
                                             <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Objet </label>
-                                                    <asp:TextBox ID="TextBox3" class="form-control " placeholder="Objet" runat="server" ></asp:TextBox>
+                                                    <label class="control-label">Chemin Document</label>
+                                                    <asp:TextBox ID="TextBox2" class="form-control " placeholder="Chemin Document" runat="server" ></asp:TextBox>
                                                 </div>
                                             </div>
                                             <!--/span-->
                                         </div>
-                                        <!--/row-->
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="control-label">Ville</label>
-                                                    <asp:TextBox ID="TextBox4" class="form-control "  placeholder="Ville" runat="server" ></asp:TextBox>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <!--/row-->
-                                        
                                       
                                     </div>
 
@@ -96,11 +81,7 @@
                 </div>
 
 
-
-
-
-
-      </div>
-   </div>
+             </div>
+        </div>
 
 </asp:Content>

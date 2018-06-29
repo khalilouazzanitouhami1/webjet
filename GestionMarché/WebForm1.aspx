@@ -1,147 +1,140 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="GestionMarché.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="GestionMarché.WebForm1" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css"/>
-    <script  src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
 
     <div class="page-wrapper">
-        <div class="container-fluid">
+         <div class="container-fluid">
 
              <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Marché</h3>
+                        <h3 class="text-themecolor">Fourniture Etranger</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Gérer Marché</li>
+                            <li class="breadcrumb-item active">Ajout Fourniture Etranger</li>
                         </ol>
-                    </div>
-            </div>
-             <!-- Row -->
+                         
+              </div>
+             </div>
+
+             
+                   <!-- Row -->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                         <div class="card-header bg-info">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header bg-info">
                                 <h4 class="m-b-0 text-white">Mise à Jour</h4>
-                         </div>
-                         <div class="card-body">
-                              <div class="form-body">
-                                  <h3 class="card-title">Saisie Info</h3>
-                                  <hr>
-                                  <div class="table-responsive">
-                                        <table id="datatable" class="table m-t-30 table-hover contact-list" data-page-size="10" width="100%" >
-                                            <thead>
-                                                <tr>
-                                                    <th>Num Marché</th>
-                                                    <th>Nom</th>
-                                                    <th>Objet</th>
-                                                    <th>Date Debut</th>
-                                                    <th>Delai Execution</th>
-                                                    <th>Ville</th>
-                                                    <th>Montant</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                         </table>
+                            </div>
+                            <div class="card-body">
+                                <form action="#">
+                                    <div class="form-body">
+                                        <h3 class="card-title">Saisie Info</h3>
+                                        <hr>
+                                        <div class="row p-t-20">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Numéro Fornuture Etranger</label>
+                                                    <asp:TextBox ID="TextBox1" class="form-control" placeholder="Numéro Fornuture Etranger" runat="server"></asp:TextBox>
+                                                   
+                                                 </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Numéro Fournisseur Etranger</label>
+                                                    <asp:DropDownlist ID="DropDownlist1" class="form-control " placeholder="Numéro Fournisseur Etranger" runat="server"></asp:DropDownlist>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                         <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Numéro Marché</label>
+                                                    <asp:DropDownlist ID="DropDownlist2" class="form-control " placeholder="Numéro Marché" runat="server"></asp:DropDownlist>
+                                                </div>
+                                                
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Nom Fournisseur Etranger</label>
+                                                    <asp:DropDownlist ID="DropDownlist3" class="form-control " placeholder="Numéro Fournisseur Etarnger" runat="server" ></asp:DropDownlist>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Designation</label>
+                                                    <asp:TextBox ID="TextBox2" class="form-control "  placeholder="Designation" runat="server" ></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Date Fourniture</label>
+                                                    <asp:TextBox ID="TextBox3" class="form-control " placeholder="Date Fourniture" runat="server" TextMode="Date"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Delai de paiement</label>
+                                                    <asp:TextBox ID="TextBox4" class="form-control " placeholder="Delai de paiement" runat="server" TextMode="Date"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                          
+                                        <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Prix Hort tax</label>
+                                                    <asp:TextBox ID="TextBox5" class="form-control " placeholder="Prix Hort tax" runat="server" TextMode="SingleLine"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
                                     </div>
-                              </div>
-                         </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Prix Tcc</label>
+                                                    <asp:TextBox ID="TextBox6" class="form-control " placeholder="Prix Tcc" runat="server" TextMode="SingleLine"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                          
+                                    </div>
+                                      
+                                    </div>
+                                    <div >
+                                        
+                                         <asp:Label Id="label1" runat="server" Visible="false" class="tst4 btn btn-danger"></asp:Label>
+                                    </div>
+                                    <br />
+                                    <div class="form-actions">  
+                                        <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-success" OnClick="Button1_Click"  />
+                                        <asp:Button ID="Button2" runat="server" Text="Cancel" class="btn btn-inverse"  />
+                                        
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row hide" id="rowHide">
-                  <div class="col-lg-12">
-                      <div class="card">
-                           <div class="card-header bg-info">
-                                <h4 class="m-b-0 text-white">Modifier Marché</h4>
-                            </div>
-                             <div class="card-body">
-                                  <form action="#">
-                                      <div class="form-body">
-                                           <h3 class="card-title">Saisie Info</h3>
-                                           <hr>
-                                            <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Num Marché</label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="numéro du marché" id="numMarche" name="numMarche" disabled>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Nom </label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="nom du marché" id="nom" name="nom" >
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Objet </label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="objet du marché" id="objet" name="objet" >
-                                                </div>
-                                            </div>
-
-                                           <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Date Début </label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="Date Début du marché" id="dateDebut" name="dateDebut" >
-                                                </div>
-                                          </div>
-
-                                          <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Délai D'execution </label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="Délai D'execution du marché" id="delaiExecution" name="delaiExecution" >
-                                                </div>
-                                          </div>
-
-                                          <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Ville </label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="ville" id="ville" name="ville" >
-                                                </div>
-                                          </div>
-
-                                          <div class="form-group m-t-40 row">
-                                                <label for="example-text-input" class="col-2 col-form-label">montant  </label>
-                                                <div class="col-10">
-                                                    <input class="form-control" type="text" value="montant" id="montant" name="ville" >
-                                                </div>
-                                          </div>
-
-                                         <div class="form-actions">
-                                            <button type="submit" class="tst3 btn btn-success" id="SaveEmployeButton" > <i class="fa fa-check"></i> Save</button>
-                                            <button type="button" class="btn btn-inverse">Cancel</button>
-                                         </div>
-
-
-
-                                           
-
-
-                                      </div>
-                                  </form>
-                             </div>
-
-
-
-                      </div>
-                   </div>
-            </div>
 
 
 
 
 
 
-
-        </div>
-    </div>
-     <script src="Data/data.js"></script>
-    <script src="assets/node_modules/toast-master/js/jquery.toast.js"></script>
-    <script src="mini-sidebar/js/toastr.js"></script>
-
+      </div>
+   </div>
 
 </asp:Content>

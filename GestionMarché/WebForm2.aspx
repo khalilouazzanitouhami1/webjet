@@ -92,11 +92,18 @@
                                         <!--/row-->
                                       
                                     </div>
+
+                                    <div >
+                                        <asp:Label ID="Label1" runat="server" Visible="false" class="tst4 btn btn-danger"></asp:Label >
+                                    </div>
+
+                                     <br />
                                     <div class="form-actions">  
                                         <asp:Button ID="Button1" runat="server" Text="Save" class="btn btn-success" OnClick="Button1_Click1"  />
                                         <asp:Button ID="Button2" runat="server" Text="Cancel" class="btn btn-inverse"  />
                                         
                                     </div>
+                                    
                                 </form>
                             </div>
                         </div>

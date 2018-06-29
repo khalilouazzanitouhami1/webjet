@@ -16,7 +16,7 @@ namespace GestionMarché
 
         public Data()
         {
-            this.cnx = new SqlConnection(@"Data Source=DESKTOP-27LT43K\SQLEXPRESS;Initial Catalog=WebJet;Integrated Security=True");
+            this.cnx = new SqlConnection(@"Data Source=DESKTOP-C0SHTQO\;Initial Catalog=WebJet;Integrated Security=True");
             this.cmd = new SqlCommand();
             if (cnx.State == ConnectionState.Closed)
             {
